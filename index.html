@@ -4,10 +4,85 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Brick UI | Home</title>
   </head>
   <body>
-    <h1>index</h1>
+    <header class="header" id="header">
+      <nav class="pb-container container">
+        <a href="index.html" class="pb-logo">Purple-Brick</a>
+        <ul class="pb-nav__items">
+          <li><a href="./public/main.html">Docs.</a></li>
+          <li>
+            <a href="https://github.com/abhisekgupta001/Brick-UI"
+              ><i class="bx bxl-github pb-social"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/dev_abhi_js"
+              ><i class="bx bxl-twitter pb-social"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/abhisek-gupta-7204101b2/"
+              ><i class="bx bxl-linkedin pb-social"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="pb-hamburger-container">
+          <i class="bx bx-grid-alt pb-hamburger"></i>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero-section" id="hero-section">
+      <!-- ==============side nav menu when screen is small======= -->
+      <aside class="nav__list sidebar shadow" id="nav__list">
+        <ul class="pb-nav__list--items">
+          <li><a href="./public/main.html">Docs.</a></li>
+          <li>
+            <a href="https://github.com/abhisekgupta001/Brick-UI"
+              ><i class="bx bxl-github pb-social"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/dev_abhi_js"
+              ><i class="bx bxl-twitter pb-social"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/abhisek-gupta-7204101b2/"
+              ><i class="bx bxl-linkedin pb-social"></i
+            ></a>
+          </li>
+        </ul>
+      </aside>
+      <main class="main-content" id="main-content">
+        <div class="main-content-container container">
+          <div class="main-content-left-section">
+            <h1 class="hero__title">Ready to <br />use</h1>
+            <h3 class="hero__sub-title">
+              Give your site a stunning User Interface with our<br />
+              Readymade Components. <br />
+              Just Copy and Paste.
+            </h3>
+            <div class="btn-wrapper">
+              <a href="./public/main.html" class="btn btn-primary"
+                >Get Started</a
+              >
+              <a href="#" class="btn btn-secondary">Installation</a>
+            </div>
+          </div>
+          <div class="main-content-right-section">
+            <img src="./public/images/hero-image.svg" alt="" />
+          </div>
+        </div>
+      </main>
+    </section>
+    <script src="./script.js"></script>
   </body>
 </html>

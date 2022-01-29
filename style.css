@@ -1,3 +1,175 @@
+@import url(./public/main.css);
+@import url(./public/variables.css);
+
 body{
-    background-color: red;
+    background-color: var(--secondary-color);
+}
+
+.header{
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    position: relative;
+    z-index: 3;
+}
+
+
+.pb-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem 0;
+}
+
+.pb-container .pb-logo{
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+}
+
+.pb-container .pb-nav__items{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left:auto;
+    align-items: center;
+}
+
+
+.pb-nav__items a{
+    font-size: 1.2rem;
+    color: var(--white);
+    padding: .8rem 1rem;
+}
+
+.pb-nav__items a:hover{
+    color: var(--primary-color);
+}
+
+.pb-social, .pb-hamburger{
+    font-size: 1.5rem;
+    margin-top: 8px;
+}
+
+.pb-hamburger{
+    color: var(--white);
+    display: none;
+}
+
+/* <!-- ==============side nav menu when screen is small======= --> */
+
+.hero-section{
+    position: relative;
+}
+
+.nav__list{
+    background-color: var(--white);
+    height: 100%;
+    width: 240px;
+    position: absolute;
+    top: 0;
+    left: -240px;
+    z-index: 2;
+    transition: all .3s ease-in;
+    box-shadow: var(--shadow);
+}
+
+.show-sidebar{
+    left: 0;
+}
+
+.pb-nav__list--items{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding-top: 5rem;
+}
+.pb-nav__list--items li > *{
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+.pb-nav__list--items li > *:hover{
+    color: var(--primary-color);
+}
+
+/* ================hero landing page styling=========== */
+
+.main-content{
+    background-color: var(--secondary-color);
+    color: var(--white);
+    height: 100%;
+  }
+.main-content-container{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: tomato; */
+}
+.main-content-left-section{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.hero__title{
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: .8;
+    margin-bottom: 2rem;
+
+}
+.hero__sub-title{
+    font-weight: 400;
+    margin-bottom: 4rem;
+    line-height: 1.5;
+
+}
+
+.btn{
+    padding: .8rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin-right: 1rem;
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-secondary{
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1.5px solid var(--primary-color);
+}
+
+
+
+.main-content-right-section{
+    /* background-color: purple; */
+    flex-basis: 100%;
+}
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .pb-container .pb-nav__items{
+        display: none;
+    }
+    .pb-hamburger{
+        display: block;
+    } 
+
+    .main-content-container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
 }
