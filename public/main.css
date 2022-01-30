@@ -8,7 +8,81 @@
 @import url(./components/card/card.css);
 @import url(./components/image/image.css);
 @import url(./components/input/input.css);
+@import url(../style.css);
+
+.doc__hero-section{
+    min-height: 100vh;
+    background-color: rosybrown;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.doc__sidebar{
+    flex-basis: 200px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.mini__container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    gap: 1rem;   
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.mini__container h3{
+    text-align: center;
+    color: var(--secondary-color-medium);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.doc__sidebar--items{
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.doc__sidebar--items > *{
+    
+    padding: 1rem 3rem 3px 1rem;
+    margin: .2rem 0;
+    border-bottom: 2px solid transparent;
+    border-bottom-left-radius:10px;
+    transition: all .3s ease;
+}
+
+.doc__sidebar--items > *:hover,
+.doc__sidebar--items > *:active{
+    border-color: var(--primary-color);
+    color: var(--primary-color-light);
+    transform: translateX(10px);
+}
+
+.doc__main{
+    flex-grow: 1;
+    background-color: var(--white);
+}
 
 
 
 
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .doc__sidebar{
+        display: none;
+    }
+    
+}
+
+
+.show-doc__sidebar{
+    display: block;
+}
