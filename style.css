@@ -3,8 +3,13 @@
 
 .home-body{
     background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 .header{
+    flex-basis: 4rem;
     width: 100%;
     background-color: var(--secondary-color);
     color: var(--white);
@@ -59,7 +64,8 @@
 
 .home__hero-section{
     position: relative;
-    padding-bottom: 3rem;
+    /* padding-bottom: 3rem; */
+    flex-grow: 1;
 }
 
 /* ========side bar ====== */
@@ -172,6 +178,7 @@
 }
 
 .footer{
+    flex-basis: 3rem;
     background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
@@ -214,3 +221,9 @@
     
 }
 
+@media screen and (max-width:1100px) {
+    .home__hero-section{
+        
+        padding:5rem 0;
+    }
+}

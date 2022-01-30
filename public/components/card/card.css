@@ -1,0 +1,9 @@
+@import url(../../main.css);
+
+
+.card-section
+{
+    padding:5rem 1rem 0;
+    height: 600px;
+    background-color: brown;
+}

@@ -1,2 +1,7 @@
 @import url(../../main.css);
-@import url(../../../style.css);
+.alert-section
+{
+    padding:5rem 1rem 0;
+    height: 600px;
+    background-color: tomato;
+}

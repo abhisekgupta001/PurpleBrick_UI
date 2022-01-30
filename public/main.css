@@ -10,18 +10,30 @@
 @import url(./components/input/input.css);
 @import url(../style.css);
 
+.doc__header{
+    position: fixed;
+    z-index: 3;
+}
+
 .doc__hero-section{
-    min-height: 100vh;
-    background-color: rosybrown;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    position: relative;
 }
 
 .doc__sidebar{
-    flex-basis: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    padding-top:4rem ;
     background-color: var(--secondary-color);
     color: var(--white);
+    transition: transform .4s ease;
+    overflow-y: auto;
+
 }
 
 .mini__container{
@@ -48,26 +60,49 @@
 
 .doc__sidebar--items > *{
     
-    padding: 1rem 3rem 3px 1rem;
-    margin: .2rem 0;
+    padding: 1rem 0rem 3px 1rem;
     border-bottom: 2px solid transparent;
     border-bottom-left-radius:10px;
     transition: all .3s ease;
 }
 
-.doc__sidebar--items > *:hover,
-.doc__sidebar--items > *:active{
+.doc__sidebar--items > *:hover ,
+.doc__sidebar--items > *:active {
     border-color: var(--primary-color);
-    color: var(--primary-color-light);
     transform: translateX(10px);
 }
 
-.doc__main{
-    flex-grow: 1;
-    background-color: var(--white);
+.doc__sidebar--items a{
+    display: inline-block;
+    width: 100%;
+    padding: .2rem 0rem;
+    color: var(--white);
+}
+
+.doc__sidebar--items > *:hover a,
+.doc__sidebar--items > *:active a{
+    color: var(--primary-color);
 }
 
 
+.doc__main{
+    flex-grow: 1;
+    margin-left: 240px;
+}
+
+.doc__sidebar--items .active-nav{
+    border-color: var(--primary-color);
+}
+.doc__sidebar--items .active-nav a{
+    color: var(--primary-color);
+}
+
+.install-section
+{
+    padding:5rem 1rem 0;
+    height: 600px;
+    background-color: purple;
+}
 
 
 
@@ -79,10 +114,17 @@
     .doc__sidebar{
         display: none;
     }
+    .doc__main{
+        margin-left: 0;
+    }
+    .show-doc__sidebar{
+        display: block;
+    }
+    
+    .hide-doc__sidebar{
+        display: none;
+    }
     
 }
 
 
-.show-doc__sidebar{
-    display: block;
-}
