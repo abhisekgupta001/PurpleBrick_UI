@@ -79,7 +79,6 @@
     left: -240px;
     z-index: 2;
     transition: all .3s ease-in;
-    box-shadow: var(--shadow);
     display: none;
 }
 
