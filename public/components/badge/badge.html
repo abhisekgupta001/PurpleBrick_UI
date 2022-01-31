@@ -55,12 +55,76 @@
           </ul>
         </div>
       </aside>
-      <main class="doc__main"></main>
+      <main class="doc__main">
+        <section class="doc-section badge-section" id="badge-section">
+          <div class="section__heading--container">
+            <h1 class="section__title">Badge</h1>
+            <p class="section__para">
+              Badges are used to display information like number of
+              notifications, unread messages, items in cart etc. <br />
+              To use a badge component add class <strong>badge</strong>.
+            </p>
+          </div>
+          <div class="section__usage--description">
+            <p>There can be different types of badges like</p>
+            <ul>
+              <li>circular <span class="class-to-be-used">[badge]</span></li>
+              <li>
+                squared <span class="class-to-be-used">[badge-square]</span>
+              </li>
+              <li>
+                rounded-corner squared
+                <span class="class-to-be-used">[badge-rounded-cr]</span>
+              </li>
+            </ul>
+          </div>
+          <div class="section__output badges__container">
+            <div>
+              <p class="text">Text with a badge</p>
+              <div class="badge__text badge">2</div>
+            </div>
+
+            <div>
+              <p class="text--lg">Text with a Large rounded corner badge</p>
+              <div class="badge__text--lg badge badge-rounded-cr">5</div>
+            </div>
+
+            <div>
+              <button class="btn button__left">Click</button>
+              <div class="badge__button badge">3</div>
+            </div>
+
+            <div>
+              <button class="btn button__toggle">Toggle square badge</button>
+              <div class="badge__button--toggle badge badge-square">8</div>
+            </div>
+
+            <div>
+              <i class="bx bxs-bell"></i>
+              <div class="badge__icon badge">10</div>
+            </div>
+          </div>
+          <div class="section__embed">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=synthwave-84&wt=none&l=auto&width=728&ds=false&dsyoff=54px&dsblur=100px&wc=true&wa=true&pv=17px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522section__output%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522alert-bar%2520alert-bar-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bx%2520bx-info-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert__text%2522%253EThis%2520is%2520an%2520info%2520alert.%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522alert__close%2522%253E%2526times%253B%253C%252Fa%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522alert-bar%2520alert-bar-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bx%2520bx-check%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert__text%2522%253EThis%2520is%2520a%2520Success%2520alert.%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522alert__close%2522%253E%2526times%253B%253C%252Fa%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522alert-bar%2520alert-bar-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bx%2520bx-error%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert__text%2522%253EThis%2520is%2520a%2520Warning%2520alert.%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522alert__close%2522%253E%2526times%253B%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-bar%2520alert-bar-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bx%2520bx-shield-x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert__text%2522%253EThis%2520is%2520a%2520Danger%2520alert.%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 100%;
+                height: 100%;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+      </main>
     </section>
     <footer id="footer" class="footer">
       <span> Designed and Developed by </span>
       <a href="https://abhisekgupta.netlify.app/"> Abhisek Gupta</a>
     </footer>
-    <script src="../../main.js"></script>
+    <script src="./badge.js"></script>
   </body>
 </html>

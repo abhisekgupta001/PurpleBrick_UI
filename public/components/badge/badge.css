@@ -1,0 +1,87 @@
+@import url(../../main.css);
+
+.badge{
+    display: grid;
+    place-items: center;
+    width:25px;
+    height: 25px;
+    aspect-ratio: 1 /1;
+    background-color:var(--red-600);
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.badge-square{
+    border-radius: 0;
+}
+
+.badge-rounded-cr{
+    border-radius: 5px;
+}
+
+
+.badges__container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+}
+.badges__container > * {
+    position: relative;
+}
+
+.bxs-bell{
+    font-size: 2rem;
+}
+
+.badge__text{
+    top: -11px;
+    right: -13px;
+}
+
+.badge__text--lg{
+    width: 28px;
+    height: 28px;
+
+    top: -20px;
+    right: -24px;
+}
+.button__left,
+.button__toggle{
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: .5rem 2rem;
+}
+.button__left:hover,
+.button__toggle:hover{
+    background-color: var(--primary-color-light);
+}
+.badge__button,
+.badge__button--toggle,
+.badge__icon
+{
+    background: tomato;
+    color: black;
+    
+}
+.badge__button{
+    top: -12px;
+    left: -10px;
+}
+.badge__button--toggle{
+    top: -15px;
+    right: 2px;
+    border: 2px solid var(--primary-light);
+}
+.badge__icon{
+    top: -12px;
+    right: -8px;
+}
+
+.hide-badge{
+    display: none;
+}
