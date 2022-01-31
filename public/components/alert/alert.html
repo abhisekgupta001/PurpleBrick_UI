@@ -58,7 +58,7 @@
         </div>
       </aside>
       <main class="doc__main">
-        <section class="alert-section" id="alert-section">
+        <section class="doc-section alert-section" id="alert-section">
           <div class="section__heading--container">
             <h1 class="section__title">Alert</h1>
             <p class="section__para">
@@ -69,13 +69,25 @@
             </p>
           </div>
           <div class="section__usage--description">
-            <p>
-              There are four types of Alerts : <br />
-              <span>1. Info alert [alert-bar-info]</span><br />
-              <span>2. Success alert [alert-bar-success]</span><br />
-              <span>3. Warning alert [alert-bar-warning]</span><br />
-              <span>4. Danger alert [alert-bar-danger]</span><br />
-            </p>
+            <p>There are four types of Alerts :</p>
+            <ul>
+              <li>
+                Info alert
+                <span class="class-to-be-used">[alert-bar-info]</span>
+              </li>
+              <li>
+                Success alert
+                <span class="class-to-be-used">[alert-bar-success]</span>
+              </li>
+              <li>
+                Warning alert
+                <span class="class-to-be-used">[alert-bar-warning] </span>
+              </li>
+              <li>
+                Danger alert
+                <span class="class-to-be-used">[alert-bar-danger] </span>
+              </li>
+            </ul>
           </div>
           <div class="section__output">
             <div class="alert-bar alert-bar-info">
@@ -95,7 +107,10 @@
             </div>
             <div class="alert-bar alert-bar-danger">
               <i class="bx bx-shield-x"></i>
-              <span class="alert__text">This is a Danger alert.</span>
+              <span class="alert__text"
+                >This is a Danger alert with retry.</span
+              >
+              <a class="alert__close">&times;</a>
             </div>
           </div>
           <div class="section__embed">
