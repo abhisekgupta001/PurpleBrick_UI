@@ -1,10 +1,40 @@
 @import url(../../main.css);
-.alert-section
-{
-    min-height: calc(100vh - 3rem);
-    padding:1rem 1rem 0;
-    margin-top: 4rem;
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 1rem;
+
+.alert-bar{
+    padding: .8rem 1rem ;
+    margin: 1rem auto;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
 }
+
+.alert-bar .bx{
+    flex-basis: 10%;
+}
+.alert-bar .alert__text{
+    flex-grow: 1;
+    flex-basis: auto;
+}
+.alert-bar .alert__close{
+    /* flex-basis: 5%; */
+    margin-right: auto;
+}
+
+.alert-bar-info{
+    background-color: var(--blue-200);
+}
+
+.alert-bar-success{
+    background-color: var(--green-200);
+}
+.alert-bar-warning{
+    background-color: var(--yellow-200);
+}
+.alert-bar-danger{
+    background-color: var(--red-300);
+}
+

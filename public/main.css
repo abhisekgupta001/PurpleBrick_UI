@@ -33,6 +33,7 @@
     color: var(--white);
     transition: transform .4s ease;
     overflow-y: auto;
+    z-index: 2;
 
 }
 
@@ -105,8 +106,57 @@
 }
 
 
+/* ===================common styles for each component page============================== */
+
+.doc-section
+{
+    min-height: calc(100vh - 3rem);
+    padding:1rem 1rem 0;
+    margin-top: 4rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.section__heading--container .section__title{
+    font-size: 3rem;
+    font-weight: 500;
+    position: relative;
+}
 
 
+.section__heading--container .section__para,
+.section__usage--description p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.section__output{
+    background-color:var( --primary-color-lighter);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1rem;
+    max-width: 90%;
+    border-radius: 8px;
+}
+
+.section__embed{
+    height: 300px;
+    background-color:var( --primary-color-lighter);
+    margin-bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    max-width: 90%;
+    border-radius: 8px;
+}
+
+.class-to-be-used{
+    color: var(--primary-color);
+}
 
 
 

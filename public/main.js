@@ -12,3 +12,4 @@ docMain.addEventListener("click", ()=>{
     docSideBar.classList.remove("show-doc__sidebar");
 
 });
+

@@ -1,13 +1,14 @@
 :root{
     --primary-color: #EA4C89;
-    --primary-color-light:#fdf6f9;
+    --primary-color-light:#f373a4;
+    --primary-color-lighter:#fae1eb;
     --secondary-color: #0D0C22;
     --secondary-color-light: #3D3D4E;
     --secondary-color-medium: #6E6D7A ;
     --white:#ffffff;
     --black:#000000;
 
-    --shadow: 0 0 15px 5px rgb(218, 218, 218);
+    --shadow: 4px 6px 10px  rgba(184, 184, 184, 0.5);
 
 
 
