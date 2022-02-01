@@ -3,8 +3,8 @@
 .badge{
     display: grid;
     place-items: center;
-    width:25px;
-    height: 25px;
+    width:20px;
+    height: 20px;
     aspect-ratio: 1 /1;
     background-color:var(--red-600);
     color: white;
@@ -29,7 +29,8 @@
     padding: 1rem;
     gap: 1rem;
 }
-.badges__container > * {
+
+.badge-parent{
     position: relative;
 }
 
