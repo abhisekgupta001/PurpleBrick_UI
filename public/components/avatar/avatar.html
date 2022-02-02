@@ -56,7 +56,172 @@
         </div>
       </aside>
       <main class="doc__main">
-        <section class="avatar-section" id="avatar-section"></section>
+        <section class="avatar-section doc-section" id="avatar-section">
+          <div class="section__heading--container">
+            <h1 class="section__title">Avatar</h1>
+            <p class="section__para">
+              Avatars are used for displaying either user's profile picture,
+              initials, or some abstract image<br />
+              To use an avatar component add class <strong>avatar</strong> to images and <strong>avatar-initials</strong> to text elements.
+            </p>
+          </div>
+          <div class="section__usage--description">
+            <p>There can be different types of avatars like</p>
+            <ul>
+              <li>
+                circular <span class="class-to-be-used">[avatar-circular]</span>
+              </li>
+              <li>
+                squared <span class="class-to-be-used">[avatar-squared]</span>
+              </li>
+              <li>
+                rounded-corner
+                <span class="class-to-be-used">[avatar-rounded-cr]</span>
+              </li>
+              <li>
+                outlined
+                <span class="class-to-be-used">[avatar-outlined]</span>
+              </li>
+            </ul>
+          </div>
+          <div class="section__output avatar__container">
+            <div class="avatar-row">
+                <img
+                  src="../../images/avatar person.jpg"
+                  class="avatar avatar-circular"
+                />
+
+                <img
+                  src="../../images/avatar person.jpg"
+                  class="avatar avatar-squared"
+                />
+
+                <img
+                src="../../images/avatar person.jpg"
+                class="avatar avatar-rounded-cr"
+              />
+
+              <img
+              src="../../images/avatar person.jpg"
+              class="avatar avatar-outlined"
+            />
+
+            </div>
+            </div>
+             <div class="section__embed">
+
+<iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28253%2C246%2C249%2C0%29&t=synthwave-84&wt=none&l=htmlmixed&width=728&ds=false&dsyoff=54px&dsblur=100px&wc=true&wa=true&pv=16px&ph=8px&ln=false&fl=1&fm=Hack&fs=12px&lh=116%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-row%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fimages%252Favatar%2520person.jpg%2522%2520class%253D%2522avatar%2520avatar-circular%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fimages%252Favatar%2520person.jpg%2522%2520class%253D%2522avatar%2520avatar-squared%2522%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fimages%252Favatar%2520person.jpg%2522%2520class%253D%2522avatar%2520avatar-rounded-cr%2522%252F%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fimages%252Favatar%2520person.jpg%2522%2520class%253D%2522avatar%2520avatar-outlined%2522%2520%2520%252F%253E%250A%253C%252Fdiv%253E%2520%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%250A"
+  style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+            </div>
+<!-- ===============================AVATAR with offline badges========================== -->
+            <div class="section__output avatar__container">
+              <div class="avatar-row">
+              <div class="badge-parent">
+                <img
+                    src="../../images/avatar person.jpg"
+                    class="avatar avatar-circular"
+                  />
+                  <div class="avatar-badge badge  offline"></div>
+              </div>
+                
+              <div class="badge-parent">
+                  <img
+                    src="../../images/avatar person.jpg"
+                    class="avatar avatar-squared"
+                  />
+                  <div class="avatar-badge badge offline"></div>
+              </div>
+              <div class="badge-parent">
+                  <img
+                  src="../../images/avatar person.jpg"
+                  class="avatar avatar-rounded-cr"
+                />
+                <div class="avatar-badge badge offline"></div>
+              </div>
+              <div class="badge-parent">
+                <img
+                src="../../images/avatar person.jpg"
+                class="avatar avatar-outlined"
+              />
+              <div class="avatar-badge badge offline"></div>
+              </div>
+  
+              </div>
+              </div>
+              <div class="section__embed">
+                <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28253%2C246%2C249%2C0%29&t=synthwave-84&wt=none&l=htmlmixed&width=728&ds=false&dsyoff=54px&dsblur=100px&wc=true&wa=true&pv=16px&ph=8px&ln=false&fl=1&fm=Hack&fs=12px&lh=116%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522section__output%2520avatar__container%2522%253E%250A%2520%253Cdiv%2520class%253D%2522avatar-row%2522%253E%250A%250A%253C%21-----------circular%2520offline%2520avatar---------------%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fimages%252Favatar%2520person.jpg%2522%2520class%253D%2522avatar%2520avatar-circular%2522%2520%252F%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-badge%2520badge%2520offline%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%253C%21-----------squared%2520offline%2520avatar---------------%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fimages%252Favatar%2520person.jpg%2522%2520class%253D%2522avatar%2520avatar-squared%2522%2520%252F%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-badge%2520badge%2520offline%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%253C%21-----------rounded%2520offline%2520avatar---------------%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fimages%252Favatar%2520person.jpg%2522%2520class%253D%2522avatar%2520avatar-rounded-cr%2522%252F%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-badge%2520badge%2520offline%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%253C%21-----------outlined%2520offline%2520avatar---------------%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fimages%252Favatar%2520person.jpg%2522%2520class%253D%2522avatar%2520avatar-outlined%2522%2520%252F%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-badge%2520badge%2520offline%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+  style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+              </div>
+
+              <!-- ===============================AVATAR with online badges========================== -->
+            <div class="section__output avatar__container">
+              <div class="avatar-row">
+              <div class="badge-parent">
+                <img
+                    src="../../images/avatar person.jpg"
+                    class="avatar avatar-circular"
+                  />
+                  <div class="avatar-badge badge online"></div>
+              </div>
+                
+              <div class="badge-parent">
+                  <img
+                    src="../../images/avatar person.jpg"
+                    class="avatar avatar-squared"
+                  />
+                  <div class="avatar-badge badge online"></div>
+              </div>
+              <div class="badge-parent">
+                  <img
+                  src="../../images/avatar person.jpg"
+                  class="avatar avatar-rounded-cr"
+                />
+                <div class="avatar-badge badge online"></div>
+              </div>
+              <div class="badge-parent">
+                <img
+                src="../../images/avatar person.jpg"
+                class="avatar avatar-outlined"
+              />
+              <div class="avatar-badge badge online"></div>
+              </div>
+  
+              </div>
+              </div>
+              <div class="section__embed">
+                <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28253%2C246%2C249%2C0%29&t=synthwave-84&wt=none&l=htmlmixed&width=728&ds=false&dsyoff=54px&dsblur=100px&wc=true&wa=true&pv=16px&ph=8px&ln=false&fl=1&fm=Hack&fs=12px&lh=116%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522section__output%2520avatar__container%2522%253E%250A%2520%253Cdiv%2520class%253D%2522avatar-row%2522%253E%250A%250A%253C%21-----------circular%2520offline%2520avatar---------------%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fimages%252Favatar%2520person.jpg%2522%2520class%253D%2522avatar%2520avatar-circular%2522%2520%252F%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-badge%2520badge%2520offline%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%253C%21-----------squared%2520offline%2520avatar---------------%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fimages%252Favatar%2520person.jpg%2522%2520class%253D%2522avatar%2520avatar-squared%2522%2520%252F%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-badge%2520badge%2520offline%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%253C%21-----------rounded%2520offline%2520avatar---------------%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fimages%252Favatar%2520person.jpg%2522%2520class%253D%2522avatar%2520avatar-rounded-cr%2522%252F%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-badge%2520badge%2520offline%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%253C%21-----------outlined%2520offline%2520avatar---------------%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fimages%252Favatar%2520person.jpg%2522%2520class%253D%2522avatar%2520avatar-outlined%2522%2520%252F%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-badge%2520badge%2520offline%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509"
+  style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+              </div>
+
+<!-- =============================Avatars with initials====================== -->
+              <div class="section__output avatar__container">
+                <div class="avatar-row">
+                    
+                     <h1 class="avatar-initials avatar-circular">AG</h1>
+                     <h1 class="avatar-initials avatar-squared">AG</h1>
+                     <h1 class="avatar-initials avatar-rounded-cr">AG</h1>
+                     <h1 class="avatar-initials avatar-outlined">AG</h1>
+                </div>
+                </div>
+                 <div class="section__embed">
+                  <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28253%2C246%2C249%2C0%29&t=synthwave-84&wt=none&l=htmlmixed&width=728&ds=false&dsyoff=54px&dsblur=100px&wc=true&wa=true&pv=16px&ph=8px&ln=false&fl=1&fm=Hack&fs=12px&lh=116%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-row%2522%253E%250A%2509%253Ch1%2520class%253D%2522avatar-initials%2520avatar-circular%2522%253EAG%253C%252Fh1%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Ch1%2520class%253D%2522avatar-initials%2520avatar-squared%2522%253EAG%253C%252Fh1%253E%250A%2520%2520%2520%2520%253Ch1%2520class%253D%2522avatar-initials%2520avatar-rounded-cr%2522%253EAG%253C%252Fh1%253E%250A%2520%2520%2520%2520%253Ch1%2520class%253D%2522avatar-initials%2520avatar-outlined%2522%253EAG%253C%252Fh1%253E%250A%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                  style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                  sandbox="allow-scripts allow-same-origin">
+                </iframe>
+                </div>
+
+          </div>
+        </section>
       </main>
     </section>
     <footer id="footer" class="footer">

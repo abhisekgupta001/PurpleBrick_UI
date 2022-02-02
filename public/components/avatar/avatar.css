@@ -1,9 +1,59 @@
 @import url(../../main.css);
 
 
-.avatar-section
+.avatar-row
 {
-    padding:5rem 1rem 0;
-    height: 600px;
-    background-color: yellow;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    align-items: center;
+}
+.avatar{
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.avatar-initials{
+    aspect-ratio: 1/1;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: var(--blue-200);
+    padding: 10px .5rem .5rem;
+}
+
+.avatar-circular{
+    border-radius: 50%;
+}
+
+.avatar-squared{
+    border-radius: 0;
+}
+
+.avatar-rounded-cr{
+    border-radius: 10px;
+}
+
+.avatar-outlined{
+    border: 2px solid var(--primary-color);
+    padding: 1px;
+}
+.avatar-initials.avatar-outlined{
+    padding: 10px .5rem .5rem;
+
+}
+
+.avatar-badge{
+    width: 15px;
+    height: 15px;
+    top: -1px;
+    right: -1px;
+}
+
+.offline{
+    background-color: var(--red-600);
+}
+
+.online {
+    background-color: var(--green-600);
 }
