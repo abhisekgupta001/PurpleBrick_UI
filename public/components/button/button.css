@@ -1,9 +1,155 @@
 @import url(../../main.css);
 
-
-.button-section
+.btn-standard-container,
+.btn-outlined-container,
+.btn-link-container,
+.btn-icon-container,
+.btn-floating-icon-container
 {
-    padding:5rem 1rem 0;
-    height: 600px;
-    background-color: blue;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    gap: 1rem;
+    
+}
+.btn{
+    padding: .6rem 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: none;
+    background:transparent;
+    border: none;
+    margin-right: 0;
+    transition: all .3s ease-in;
+}
+
+.button-section  button:hover {
+opacity: .5;
+transform: scale(.95);
+}
+
+button:disabled{
+    pointer-events: none;
+}
+/* ===================Standard STYLING=============== */
+
+.btn-standard-primary{
+    background-color:var(--primary-color);
+    color: var(--white);
+}
+
+.btn-standard-secondary{
+    background-color:var(--primary-color-light);
+    color: var(--white);
+}
+
+.btn-standard-success{
+    background-color: var(--green-400);
+    color: var(--green-100);
+    
+}
+.btn-standard-warning{
+    background-color: var(--yellow-400);
+    color: var(--yellow-800);
+}
+.btn-standard-danger{
+    background-color: var(--red-600);
+    color: var(--red-100);
+
+}
+.btn-standard-disabled{
+    background-color: var(--secondary-color-medium);
+    color: var(--secondary-color-light);
+    opacity: .5;
+}
+
+/* ===================OUTLINED STYLING=============== */
+
+.btn-outlined-primary{
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outlined-secondary{
+    border: 2px solid var(--primary-color-light);
+    color: var(--primary-color-light);
+}
+
+.btn-outlined-success{
+    border: 2px solid var(--green-400);
+    color: var(--green-400);
+    
+}
+.btn-outlined-warning{
+    border: 2px solid var(--yellow-400);
+    color: var(--yellow-400);
+}
+.btn-outlined-danger{
+    border: 2px solid var(--red-400);
+    color: var(--red-400);
+}
+.btn-outlined-disabled{
+    border: 2px solid var(--secondary-color-medium);
+    color: var(--secondary-color-medium);
+    opacity: .5;
+}
+
+/* ===================linked STYLING=============== */
+.btn-link:hover{
+    text-decoration: underline;
+}
+
+.btn-link-primary{
+    color: var(--primary-color);
+}
+
+.btn-link-secondary{
+    color: var(--primary-color-light);
+}
+
+.btn-link-success{
+    color: var(--green-400);
+    
+}
+.btn-link-warning{
+    color: var(--yellow-400);
+}
+.btn-link-danger{
+    color: var(--red-400);
+}
+.btn-link-disabled{
+    color: var(--secondary-color-medium);
+    opacity: .5;
+}
+
+
+/* ===================Icon STYLING=============== */
+.btn-icon{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-items: center;
+    gap: .25rem;
+    font-size: 1rem;
+    padding: .5rem .8rem;
+}
+
+.btn-icon > * {
+    color: var(--black);
+}
+
+.btn-icon-icon{
+    font-size: 1.4rem;
+}
+
+.btn-floating-icon{
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    align-content: center;
 }

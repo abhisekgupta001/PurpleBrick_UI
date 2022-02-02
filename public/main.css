@@ -110,6 +110,8 @@
 
 .doc-section
 {
+    font-family: var(--poppins);
+    
     min-height: calc(100vh - 3rem);
     padding:1rem 1rem 0;
     margin-top: 4rem;
