@@ -1,9 +1,213 @@
 @import url(../../main.css);
 
+.card__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 
-.card-section
-{
-    padding:5rem 1rem 0;
-    height: 600px;
-    background-color: brown;
+}
+.card{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-profile{
+    width: 15rem;
+    height: 20rem;
+    border-radius: 10px;
+}
+
+.card-profile-primary{
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.card-profile-outlined{
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.card__img{
+    width: 35%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border:2px solid var(--primary-color);
+    padding: 2px;
+}
+
+.card__title--container{
+    text-align: center;
+    align-self: center;
+}
+.card__subtitle{
+    opacity: .7;
+    font-size: .8rem;
+}
+
+.card__clickables{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card-profile-primary .bx.btn-icon-icon{
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.card-profile-outlined .bx.btn-icon-icon{
+    color: var(--secondary-color);
+}
+
+
+.card-profile-primary .btn-icon-icon:hover,
+.card-profile-outlined .btn-icon-icon:hover{
+    color: var(--primary-color-light);
+}
+
+/* -------------card with badges------------ */
+
+.card-product{
+    width: 15rem;
+    border-radius: 5px;
+    background-color:var(--white);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    box-shadow: var(--shadow);
+    overflow:hidden;
+
+    position: relative;
+}
+
+.card-badge{
+    position: absolute;
+top: 5px;
+left: 5px;
+background-color: var(--red-600);
+color:var(--white);
+padding: 1px 4px;
+border-radius: 4px;
+
+}
+.card-product-img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius:inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: all .3s ease-in;
+}
+.card-product-img:hover{
+    transform: scale(1.05);
+    opacity: .9;
+}
+
+.product-title{
+    font-size: 1.1rem;
+    font-weight: 600;  
+}
+.product-subtitle{
+    font-size: .8rem;
+    opacity: .6;
+}
+.discount-price{
+    font-size: .7rem;
+    text-decoration:line-through;
+}
+.discount-percent{
+    font-size: .8rem;
+    color: var(--primary-color);
+}
+
+.product-clickable{
+    margin:.5rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn-add-to-cart{
+    margin:0;
+    padding:0.2rem 0.4rem;
+    border-radius: 5px;
+}
+.btn-add-to-cart:hover{
+background-color: var(--primary-color-light);
+
+}
+
+.btn-wishlist{
+    margin:0;
+    border: 1px solid var(--primary-color-light);
+    border-radius: 5px;
+
+}
+.btn-wishlist:hover{
+    color: var(--primary-color-light);
+}
+
+/* ------------------dismiss card -------------- */
+.card-with-dismiss{
+    width: 20rem;
+    height: 10rem;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-cancel, .btn-confirm{
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.btn-confirm{
+    padding: .2rem 0.5rem;
+    margin-left: .5rem;
+}
+.btn-cancel:hover, .btn-confirm:hover{
+    transform: scale(.9);
+}
+
+/* ---------------Overlay card---------------- */
+.card-overlay-parent{
+    position: relative;
+}
+.card-overlay-child{
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    color: var(--secondary-color);
+    background-image: linear-gradient(180deg, rgba(255,255,255,0),rgba(255,255,255,.7), rgba(255,255,255,.99), rgba(255,255,255,1));
+}
+.card-overlay-product{
+    position: relative;
+}
+
+.card-overlay-badge{
+    position: absolute;
+    top: 2px;
+    right: -15px;
+    background-color: var(--red-600);
+    color:var(--white);
+    z-index: 3;
+    transform: rotate(30deg);
 }
