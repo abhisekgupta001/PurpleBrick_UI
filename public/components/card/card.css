@@ -57,7 +57,7 @@
     flex-flow: row wrap;
 }
 
-.bx.btn-icon-icon{
+.card-profile-primary .bx.btn-icon-icon{
     color: var(--white);
     font-size: 2rem;
 }
@@ -67,7 +67,7 @@
 }
 
 
-.btn-icon-icon:hover,
+.card-profile-primary .btn-icon-icon:hover,
 .card-profile-outlined .btn-icon-icon:hover{
     color: var(--primary-color-light);
 }
@@ -159,8 +159,8 @@ background-color: var(--primary-color-light);
 
 /* ------------------dismiss card -------------- */
 .card-with-dismiss{
-    width: 300px;
-    height: 100px;
+    width: 20rem;
+    height: 10rem;
     background-color: var(--white);
     box-shadow: var(--shadow);
     border-radius: 10px;
