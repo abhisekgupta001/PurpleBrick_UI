@@ -1,9 +1,48 @@
 @import url(../../main.css);
 
+.image__container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    overflow: hidden;
+}
 
-.image-section
-{
-    padding:5rem 1rem 0;
-    height: 600px;
-    background-color: pink;
+
+.img-responsive-container{
+    width: 40%;
+    margin: 0 auto;
+}
+.img-responsive-container .img{
+    margin-bottom: 1rem;
+}
+.img{
+    /*this will be applied if user only gave img, to make it responsive add more classes*/
+    width: 10rem;
+    height: 10rem;
+}
+
+.img-responsive{
+    width:100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.img-ratio-1-1{
+    aspect-ratio: 1/1;
+}
+
+.img-ratio-16-9{
+    aspect-ratio: 16/9;
+}
+
+/* ==================Rounded image styling============== */
+.img-rounded{
+    border-radius: 1rem;
+}
+
+/* ==================circular image styling============== */
+.img-circular{
+    border-radius: 50%;
 }
