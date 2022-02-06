@@ -15,6 +15,7 @@
     color: var(--white);
     position: relative;
     z-index: 3;
+    border-bottom: 1px solid var(--secondary-color-desaturated);
 }
 
 
@@ -106,7 +107,7 @@
 .main-content{
     background-color: var(--secondary-color);
     color: var(--white);
-    /* height: 100%; */
+    padding-bottom: 2rem;
   }
 .main-content-container{
     display: flex;
@@ -193,6 +194,8 @@
     bottom:0;
     left:0;
     right:0;
+
+    border-top: 1px solid var(--secondary-color-desaturated);
 }
 
 .footer a{
@@ -205,7 +208,21 @@
   border-bottom: 1px solid var(--primary-color-lighter);
 }
 
+/* =================Installation-guide on index.html============== */
+.installation-conatainer{
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 2rem 0;
+    border-top: 1px solid var(--secondary-color-desaturated);
+}
 
+.section__embed-home
+{
+    margin: 2rem auto;
+    border: 1px solid var(--secondary-color-desaturated);
+    border-radius: .5rem;
+    padding: 1rem;
+}
 
 
 @media screen and (max-width:600px) {
