@@ -1,9 +1,10 @@
 @import url(../../main.css);
 
-
-.input-section
-{
-    padding:5rem 1rem 0;
-    height: 600px;
-    background-color: red;
+.input-field{
+    width: 50%;
+    padding: .6rem .5rem;
+    border: 2px solid var(--secondary-color);
+    font-size: 1.1rem;
+    border-radius: .3rem;
+    caret-color: var(--primary-color);
 }
