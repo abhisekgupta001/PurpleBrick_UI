@@ -1,10 +1,30 @@
 @import url(../../main.css);
 
+.input__container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.input__container > div{
+    width: 60%;
+    margin: 0 auto;
+}
 .input-field{
-    width: 50%;
+    width: 100%;
     padding: .6rem .5rem;
     border: 2px solid var(--secondary-color);
     font-size: 1.1rem;
     border-radius: .3rem;
     caret-color: var(--primary-color);
+}
+
+.input-radio-container,
+.input-checkbox-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }

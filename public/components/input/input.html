@@ -99,35 +99,106 @@
             </ul>
           </div>
           <h3>Input Text | Number | Password | Email</h3>
-          <div class="section__output card__container">
-            <input
-              type="text"
-              placeholder="Enter a text here"
-              class="input-field input-field-text"
-            />
-            <input
-              type="number"
-              placeholder="Enter a number"
-              class="input-field input-field-number"
-            />
-            <input
-              type="password"
-              class="input-field input-field-password"
-              placeholder="Enter Password"
-            />
-            <input
-              type="email"
-              class="input-field input-field-email"
-              placeholder="Enter Email"
-              name="email"
-            />
+          <div class="section__output input__container">
+            <div>
+              <label for="input-text">Enter Text:</label>
+              <input
+                type="text"
+                placeholder="Enter a text here"
+                class="input-field input-field-text"
+                id="input-text"
+              />
+            </div>
+            <div>
+              <label for="input-number">Enter Number:</label>
+              <input
+                type="number"
+                placeholder="Enter a number"
+                class="input-field input-field-number"
+                id="input-number"
+              />
+            </div>
+            <div>
+              <label for="input-password">Enter Password:</label>
+              <input
+                type="password"
+                class="input-field input-field-password"
+                placeholder="Enter Password"
+                id="input-password"
+              />
+            </div>
+            <div>
+              <label for="input-email">Enter Email:</label>
+              <input
+                type="email"
+                class="input-field input-field-email"
+                placeholder="Enter Email"
+                id="input-email"
+              />
+            </div>
           </div>
           <div class="section__embed">
             <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28253%2C246%2C249%2C0%29&t=synthwave-84&wt=none&l=htmlmixed&width=728&ds=false&dsyoff=54px&dsblur=100px&wc=true&wa=true&pv=16px&ph=8px&ln=false&fl=1&fm=Hack&fs=12px&lh=116%25&si=false&es=2x&wm=false&code=%253C%21--------------Input%2520Text%2520Field------------------%253E%250A%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520a%2520text%2520here%2522%2520class%253D%2522input-field%2520input-field-text%2522%2520%252F%253E%250A%250A%253C%21--------------Input%2520Number%2520Field------------------%253E%250A%253Cinput%2520type%253D%2522number%2522%2520placeholder%253D%2522Enter%2520a%2520number%2522%2520class%253D%2522input-field%2520input-field-number%2522%2520%252F%253E%250A%250A%253C%21--------------Input%2520password%2520Field------------------%253E%250A%253Cinput%2520type%253D%2522password%2522%2520placeholder%253D%2522Enter%2520Password%2522%2520class%253D%2522input-field%2520input-field-password%2522%2520%252F%253E%250A%250A%253C%21--------------Input%2520email%2520Field------------------%253E%250A%253Cinput%2520type%253D%2522email%2522%2520placeholder%253D%2522Enter%2520Email%2522%2520class%253D%2522input-field%2520input-field-email%2522%2520name%253D%2522email%2522%2520%252F%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+              src="https://carbon.now.sh/embed?bg=rgba%28253%2C246%2C249%2C0%29&t=synthwave-84&wt=none&l=htmlmixed&width=728&ds=false&dsyoff=54px&dsblur=100px&wc=true&wa=true&pv=16px&ph=8px&ln=false&fl=1&fm=Hack&fs=12px&lh=116%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522section__output%2520input__container%2522%253E%250A%2509%253Cdiv%253E%250A%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522input-text%2522%253EEnter%2520Text%253A%253C%252Flabel%253E%250A%2509%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520a%2520text%2520here%2522%2520class%253D%2522input-field%2520input-field-text%2522%2520id%253D%2522input-text%2522%252F%253E%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522input-number%2522%253EEnter%2520Number%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522number%2522%2520placeholder%253D%2522Enter%2520a%2520number%2522%2520class%253D%2522input-field%2520input-field-number%2522%2520id%253D%2522input-number%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522input-password%2522%253EEnter%2520Password%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520class%253D%2522input-field%2520input-field-password%2522%2520placeholder%253D%2522Enter%2520Password%2522%2520id%253D%2522input-password%2522%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522input-email%2522%253EEnter%2520Email%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520class%253D%2522input-field%2520input-field-email%2522%2520placeholder%253D%2522Enter%2520Email%2522%2520id%253D%2522input-email%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
               style="
                 width: 100%;
-                height: 243px;
+                height: 341px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <h3>Input Radio | Checkbox</h3>
+          <div class="section__output input__container">
+            <div class="input-radio-container">
+              <div>
+                <input
+                  type="radio"
+                  id="radio-male"
+                  class="input-btn-radio"
+                  name="gender"
+                  value="Male"
+                  checked
+                />
+                <label for="radio-male">Male</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="radio-female"
+                  class="input-btn-radio"
+                  name="gender"
+                  value="Female"
+                />
+                <label for="radio-female">Female</label>
+              </div>
+            </div>
+
+            <div class="input-checkbox-container">
+              <label>
+                <input type="checkbox" class="input-btn-checkbox" /> Option One
+              </label>
+              <label>
+                <input type="checkbox" class="input-btn-checkbox" checked />
+                Option Two
+              </label>
+              <label>
+                <input type="checkbox" class="input-btn-checkbox" /> Option
+                Three
+              </label>
+            </div>
+          </div>
+
+          <div class="section__embed">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28253%2C246%2C249%2C0%29&t=synthwave-84&wt=none&l=htmlmixed&width=728&ds=false&dsyoff=54px&dsblur=100px&wc=true&wa=true&pv=16px&ph=8px&ln=false&fl=1&fm=Hack&fs=12px&lh=116%25&si=false&es=2x&wm=false&code=%253C%21----------------RADIO%2520BUTTON------------------------%253E%250A%253Cdiv%2520class%253D%2522input-radio-container%2522%253E%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522radio-male%2522%2520class%253D%2522input-btn-radio%2522%2520name%253D%2522gender%2522%2520value%253D%2522Male%2522%2520checked%2520%252F%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-male%2522%253EMale%253C%252Flabel%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522radio-female%2522%2520class%253D%2522input-btn-radio%2522%2520name%253D%2522gender%2522%2520value%253D%2522Female%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-female%2522%253EFemale%253C%252Flabel%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21----------------CHECKBOX%2520BUTTON------------------------%253E%250A%253Cdiv%2520class%253D%2522input-checkbox-container%2522%253E%250A%2520%253Clabel%253E%250A%2520%2509%253Cinput%2520type%253D%2522checkbox%2522%2520class%253D%2522input-btn-checkbox%2522%2520%252F%253E%2520Option%2520One%250A%2520%253C%252Flabel%253E%250A%2520%253Clabel%253E%250A%2520%2509%253Cinput%2520type%253D%2522checkbox%2522%2520class%253D%2522input-btn-checkbox%2522%2520checked%2520%252F%253E%2520Option%2520Two%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%253C%252Flabel%253E%250A%2520%253Clabel%253E%250A%2520%2509%253Cinput%2520type%253D%2522checkbox%2522%2520class%253D%2522input-btn-checkbox%2522%2520%252F%253E%2520Option%2520Three%250A%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 100%;
+                height: 424px;
                 border: 0;
                 transform: scale(1);
                 overflow: hidden;
