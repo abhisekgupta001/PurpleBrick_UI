@@ -56,7 +56,121 @@
         </div>
       </aside>
       <main class="doc__main">
-        <section class="image-section" id="image-section"></section>
+        <section class="image-section doc-section" id="image-section">
+          <div class="section__heading--container">
+            <h1 class="section__title">Images</h1>
+            <p class="section__para">
+              Imagess are images, pictures on a web page. Images can be in form
+              of a product image, a profile image, a banner etc.<br />
+              To use an image component add class <strong>img</strong>.
+            </p>
+          </div>
+          <div class="section__usage--description">
+            <p>
+              There are multiple types of images on a site, some of the types
+              are:
+            </p>
+            <ul>
+              <li>
+                Responsive image
+                <span class="class-to-be-used">[img-responsive]</span>
+              </li>
+              <li>
+                rounder image<span class="class-to-be-used">[img-rounded]</span>
+              </li>
+              <li>
+                circular image
+                <span class="class-to-be-used">[img-circular]</span>
+              </li>
+            </ul>
+          </div>
+
+          <h3>Regular Responsive image</h3>
+          <p>*Width and height can be changed as per need from CSS.</p>
+          <div class="section__output image__container">
+            <div class="img-responsive-container">
+              <img
+                src="../../images/avatar person.jpg"
+                class="img img-ratio-1-1 img-responsive"
+              />
+              <!-- if the image is a cover, aspect ratio is 16:9-add the required class -->
+              <img
+                src="../../images/avatar person.jpg"
+                class="img img-ratio-16-9 img-responsive"
+              />
+            </div>
+          </div>
+          <div class="section__embed">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28253%2C246%2C249%2C0%29&t=synthwave-84&wt=none&l=htmlmixed&width=728&ds=false&dsyoff=54px&dsblur=100px&wc=true&wa=true&pv=16px&ph=8px&ln=false&fl=1&fm=Hack&fs=12px&lh=116%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522img-responsive-container%2522%253E%250A%2509%253C%21--%2520if%2520the%2520image%2520is%2520a%2520profile%2520or%2520a%2520post%252C%2520aspect%2520ratio%2520is%25201%253A1-add%2520the%2520required%2520class%2520--%253E%250A%2520%2509%253Cimg%2520src%253D%2522..%252F..%252Fimages%252Favatar%2520person.jpg%2522%2520class%253D%2522img%2520img-ratio-1-1%2520img-responsive%2522%2520%252F%253E%250A%2520%250A%2520%2509%253C%21--%2520if%2520the%2520image%2520is%2520a%2520cover%252C%2520aspect%2520ratio%2520is%252016%253A9-add%2520the%2520required%2520class%2520--%253E%250A%2520%2509%253Cimg%2520src%253D%2522..%252F..%252Fimages%252Favatar%2520person.jpg%2522%2520class%253D%2522img%2520img-ratio-16-9%2520img-responsive%2522%2520%252F%253E%250A%2520%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+              style="
+                width: 100%;
+                height: 187px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <h3>Rounded Responsive image</h3>
+          <p>*Width and height can be changed as per need from CSS.</p>
+          <div class="section__output image__container">
+            <div class="img-responsive-container">
+              <img
+                src="../../images/avatar person.jpg"
+                alt=""
+                class="img img-ratio-1-1 img-responsive img-rounded"
+              />
+              <!-- if the image is a cover, aspect ratio is 16:9-add the required class -->
+              <img
+                src="../../images/avatar person.jpg"
+                class="img img-ratio-16-9 img-responsive img-rounded"
+              />
+            </div>
+          </div>
+          <div class="section__embed">
+            <iframe
+              src="https://carbon.now.sh/embed/tZwgApt3TAsyUycnHeVZ"
+              style="
+                width: 100%;
+                height: 203px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <h3>Circular Responsive image</h3>
+          <p>*Width and height for a circular image has to be same.</p>
+          <div class="section__output image__container">
+            <div class="img-responsive-container">
+              <img
+                src="../../images/avatar person.jpg"
+                class="img img-ratio-1-1 img-responsive img-circular"
+              />
+            </div>
+          </div>
+          <div class="section__embed">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28253%2C246%2C249%2C0%29&t=synthwave-84&wt=none&l=auto&width=728&ds=false&dsyoff=54px&dsblur=100px&wc=true&wa=true&pv=16px&ph=8px&ln=false&fl=1&fm=Hack&fs=12px&lh=116%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522img-responsive-container%2522%253E%250A%2520%2509%253Cimg%2520src%253D%2522..%252F..%252Fimages%252Favatar%2520person.jpg%2522%2520class%253D%2522img%2520img-ratio-1-1%2520img-responsive%2520img-circular%2522%2520%252F%253E%250A%2520%253C%252Fdiv%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+              style="
+                width: 100%;
+                height: 132px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
       </main>
     </section>
     <footer id="footer" class="footer">
