@@ -1,0 +1,46 @@
+@import url(../../main.css);
+
+.text-util__container{
+    font-family: var(--poppins);
+    font-weight: 300;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+.heading-1,
+.para-1{
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.heading-2,
+.para-2{
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.heading-3,
+.para-3{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.heading-4,
+.para-4{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.heading-5,
+.para-5{
+    font-size: 0.5rem;
+    line-height: 1rem;
+}
+
+.gray-text{
+    color: var(--gray-400);
+}
+
+.centered-text{
+    text-align: center;
+}
