@@ -1,0 +1,56 @@
+@import url(../../main.css);
+
+.list-type-none{
+    list-style-type: none;
+}
+.list-type-disc{
+    list-style-type: disc;
+}
+.list-type-circle{
+    list-style-type: circle;
+}
+.list-type-square{
+    list-style-type: square;
+}
+.list-type-number{
+    list-style-type:decimal;
+}
+.list-type-sm-alphabet{
+    list-style-type: lower-alpha;
+}
+.list-type-lg-alphabet{
+    list-style-type:upper-alpha
+}
+.list-type-roman
+{
+    list-style-type:lower-roman
+}
+
+.list__container .para-4{
+    color: var(--gray-400);
+    margin-left:-1rem;
+    background-color: var(--gray-100);
+    padding: .2rem .5rem;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.list-stacked{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+
+.list-stacked .list-item
+{
+    background-color: var(--gray-200);
+    border-radius: 5px;
+    width: fit-content;
+    padding: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
