@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./list.css" />
+
+    <title>Purple Brick | List</title>
+  </head>
+  <body>
+    <header class="header doc__header" id="header">
+      <nav class="pb-container container">
+        <a href="../../../index.html" class="pb-logo">Purple-Brick</a>
+        <ul class="pb-nav__items">
+          <li><a href="../../main.html">Docs.</a></li>
+          <li>
+            <a href="https://github.com/abhisekgupta001/Brick-UI"
+              ><i class="bx bxl-github pb-social"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/dev_abhi_js"
+              ><i class="bx bxl-twitter pb-social"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/abhisek-gupta-7204101b2/"
+              ><i class="bx bxl-linkedin pb-social"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="pb-hamburger-container">
+          <i class="bx bx-grid-alt pb-hamburger"></i>
+        </div>
+      </nav>
+    </header>
+    <section class="doc__hero-section" id="doc__hero-section">
+      <aside class="doc__sidebar">
+        <div class="mini__container">
+          <h3>Components</h3>
+          <ul class="doc__sidebar--items">
+            <li><a href="../../main.html">Install</a></li>
+            <li><a href="../alert/alert.html">Alert</a></li>
+            <li><a href="../avatar/avatar.html">Avatar</a></li>
+            <li><a href="../badge/badge.html">Badge</a></li>
+            <li><a href="../button/button.html">Button</a></li>
+            <li><a href="../card/card.html">Card</a></li>
+            <li><a href="./image.html">Image</a></li>
+            <li><a href="../input/input.html">Input</a></li>
+            <li><a href="../text_utilities/text_util.html">Typography</a></li>
+            <li class="active-nav">
+              <a href="../list/list.html">List</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main class="doc__main">
+        <section class="list-section doc-section" id="list-section">
+          <div class="section__heading--container">
+            <h1 class="section__title">List</h1>
+            <p class="section__para">
+              List does what the name says, list down a set of info to the user
+              on a web page. <br />
+              To use list component use class <strong>list</strong>
+            </p>
+          </div>
+          <h3 class="heading-3">Simple unordered list</h3>
+          <div class="section__output list__container">
+            <p class="para-4">LIST OF TYPE DISC</p>
+            <ul class="list-unordered list-type-disc">
+              <li class="list-item">Item</li>
+              <li class="list-item">Item</li>
+              <li class="list-item">Item</li>
+            </ul>
+            <br />
+            <p class="para-4">LIST OF TYPE CIRCLE</p>
+            <ul class="list-unordered list-type-circle">
+              <li class="list-item">Item</li>
+              <li class="list-item">Item</li>
+              <li class="list-item">Item</li>
+            </ul>
+            <br />
+            <p class="para-4">LIST OF TYPE SQUARE</p>
+            <ul class="list-unordered list-type-square">
+              <li class="list-item">Item</li>
+              <li class="list-item">Item</li>
+              <li class="list-item">Item</li>
+            </ul>
+          </div>
+          <div class="section__embed">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28253%2C246%2C249%2C0%29&t=synthwave-84&wt=none&l=htmlmixed&width=728&ds=false&dsyoff=54px&dsblur=100px&wc=true&wa=true&pv=16px&ph=8px&ln=false&fl=1&fm=Hack&fs=12px&lh=116%25&si=false&es=2x&wm=false&code=%253C%21----------LIST%2520OF%2520TYPE%2520DISC-----------%253E%250A%253Cul%2520class%253D%2522list-unordered%2520list-type-disc%2522%253E%250A%2509%253Cli%2520class%253D%2522list-item%2522%253EItem%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EItem%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EItem%253C%252Fli%253E%250A%253C%252Ful%253E%250A%250A%253C%21----------LIST%2520OF%2520TYPE%2520CIRCLE-----------%253E%250A%253Cul%2520class%253D%2522list-unordered%2520list-type-circle%2522%253E%250A%2509%253Cli%2520class%253D%2522list-item%2522%253EItem%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EItem%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EItem%253C%252Fli%253E%250A%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253C%21----------LIST%2520OF%2520TYPE%2520SQUARE-----------%253E%250A%253Cul%2520class%253D%2522list-unordered%2520list-type-square%2522%253E%250A%2509%253Cli%2520class%253D%2522list-item%2522%253EItem%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EItem%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EItem%253C%252Fli%253E%250A%253C%252Ful%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+              style="
+                width: 100%;
+                height: 368px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <h3 class="heading-3">Ordered list</h3>
+          <div class="section__output list__container">
+            <p class="para-4">NUMBERED LIST</p>
+            <ol class="list-ordered list-type-number">
+              <li class="list-item">Item</li>
+              <li class="list-item">Item</li>
+              <li class="list-item">Item</li>
+            </ol>
+            <br />
+            <p class="para-4">REVERSED NUMBERED LIST</p>
+            <ol class="list-ordered list-type-number" reversed>
+              <li class="list-item">Item</li>
+              <li class="list-item">Item</li>
+              <li class="list-item">Item</li>
+            </ol>
+            <br />
+            <p class="para-4">SMALL ALPHABET LIST</p>
+            <ol class="list-ordered list-type-sm-alphabet">
+              <li class="list-item">Item</li>
+              <li class="list-item">Item</li>
+              <li class="list-item">Item</li>
+            </ol>
+            <br />
+            <p class="para-4">LARGE ALPHABET LIST</p>
+            <ol class="list-ordered list-type-lg-alphabet">
+              <li class="list-item">Item</li>
+              <li class="list-item">Item</li>
+              <li class="list-item">Item</li>
+            </ol>
+            <br />
+
+            <p class="para-4">ROMAN NUMBER LIST</p>
+            <ol class="list-ordered list-type-roman">
+              <li class="list-item">Item</li>
+              <li class="list-item">Item</li>
+              <li class="list-item">Item</li>
+            </ol>
+            <br />
+          </div>
+          <div class="section__embed">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28253%2C246%2C249%2C0%29&t=synthwave-84&wt=none&l=htmlmixed&width=728&ds=false&dsyoff=54px&dsblur=100px&wc=true&wa=true&pv=16px&ph=8px&ln=false&fl=1&fm=Hack&fs=12px&lh=116%25&si=false&es=2x&wm=false&code=%253C%21----------LIST%2520OF%2520TYPE%2520NUMBER-----------%253E%250A%253Col%2520class%253D%2522list-ordered%2520list-type-number%2522%253E%250A%2509%253Cli%2520class%253D%2522list-item%2522%253EItem%253C%252Fli%253E%250A%253C%252Fol%253E%250A%250A%253C%21----------LIST%2520OF%2520TYPE%2520NUMBER%2520REVERSED-----------%253E%250A%253Col%2520class%253D%2522list-ordered%2520list-type-number%2522%2520reversed%253E%250A%2509%253Cli%2520class%253D%2522list-item%2522%253EItem%253C%252Fli%253E%250A%253C%252Fol%253E%250A%250A%253C%21----------LIST%2520OF%2520TYPE%2520SMALL%2520ALPHABET-----------%253E%250A%253Col%2520class%253D%2522list-ordered%2520list-type-sm-alphabet%2522%253E%250A%2509%253Cli%2520class%253D%2522list-item%2522%253EItem%253C%252Fli%253E%250A%253C%252Fol%253E%250A%250A%253C%21----------LIST%2520OF%2520TYPE%2520LARGE%2520ALPHABET-----------%253E%250A%253Col%2520class%253D%2522list-ordered%2520list-type-lg-alphabet%2522%253E%250A%2509%253Cli%2520class%253D%2522list-item%2522%253EItem%253C%252Fli%253E%250A%253C%252Fol%253E%250A%250A%253C%21----------LIST%2520OF%2520TYPE%2520ROMAN%2520NUMBER-----------%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Col%2520class%253D%2522list-ordered%2520list-type-roman%2522%253E%250A%2509%253Cli%2520class%253D%2522list-item%2522%253EItem%253C%252Fli%253E%250A%253C%252Fol%253E"
+              style="
+                width: 100%;
+                height: 473px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <h3 class="heading-3">Stacked list</h3>
+          <div class="section__output list__container">
+            <ul class="list-stacked list-type-none">
+              <li class="list-item">
+                <i class="bx bx-mail-send btn-icon-icon"></i>
+                <span class="list-item-text">You have a new message.</span>
+                <a href="#" class="btn-link btn-link-primary">Open</a>
+              </li>
+              <li class="list-item">
+                <i class="bx bx-mail-send btn-icon-icon"></i>
+                <span class="list-item-text">You have a new message.</span>
+                <a href="#" class="btn-link btn-link-primary">Open</a>
+              </li>
+              <li class="list-item">
+                <i class="bx bx-mail-send btn-icon-icon"></i>
+                <span class="list-item-text">You have a new message.</span>
+                <a href="#" class="btn-link btn-link-primary">Open</a>
+              </li>
+            </ul>
+          </div>
+          <div class="section__embed">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28253%2C246%2C249%2C0%29&t=synthwave-84&wt=none&l=htmlmixed&width=728&ds=false&dsyoff=54px&dsblur=100px&wc=true&wa=true&pv=16px&ph=8px&ln=false&fl=1&fm=Hack&fs=12px&lh=116%25&si=false&es=2x&wm=false&code=%253C%21----------STACKED%2520LIST-----------%253E%250A%253Cul%2520class%253D%2522list-stacked%2520list-type-none%2522%253E%250A%2509%253Cli%2520class%253D%2522list-item%2522%253E%250A%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522bx%2520bx-mail-send%2520btn-icon-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522list-item-text%2522%253EYou%2520have%2520a%2520new%2520message.%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn-link%2520btn-link-primary%2522%253EOpen%253C%252Fa%253E%250A%2509%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%250A%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522bx%2520bx-mail-send%2520btn-icon-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522list-item-text%2522%253EYou%2520have%2520a%2520new%2520message.%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn-link%2520btn-link-primary%2522%253EOpen%253C%252Fa%253E%250A%2509%253C%252Fli%253E%250A%253C%252Ful%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A"
+              style="
+                width: 100%;
+                height: 285px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+      </main>
+    </section>
+    <footer id="footer" class="footer">
+      <span> Designed and Developed by </span>
+      <a href="https://abhisekgupta.netlify.app/"> Abhisek Gupta</a>
+    </footer>
+    <script src="../../main.js"></script>
+  </body>
+</html>
