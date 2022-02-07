@@ -147,11 +147,13 @@
     align-items: center;
     padding: 1rem;
     border-radius: 8px;
+    
 }
 
 .section__embed > iframe{
     width: 100%;
     height: auto;
+    overflow-y: auto;
 }
 
 .class-to-be-used{
@@ -178,3 +180,29 @@
 }
 
 
+
+
+/* --------------------styling scroll bar--------------- */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: var(--secondary-color);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+    border-radius: 1rem;
+    border: 2px solid var(--secondary-color);
+}
+
+iframe::-webkit-scrollbar{
+    width: 10px;
+}
+iframe::-webkit-scrollbar-track{
+    background: var(--secondary-color);
+}
+iframe::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+    border-radius: 1rem;
+    border: 2px solid var(--secondary-color);
+}
