@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@100;300;400;500;600;700;900&family=Poppins:wght@400;600;700&display=swap');
 @import url(./variables.css);
 @import url(./reset.css);
+@import url(../style.css);
 @import url(./components/alert/alert.css);
 @import url(./components/avatar/avatar.css);
 @import url(./components/badge/badge.css);
@@ -10,7 +11,6 @@
 @import url(./components/input/input.css);
 @import url(./components/text_utilities/text_util.css);
 @import url(./components/list/list.css);
-@import url(../style.css);
 
 .doc__header{
     position: fixed;
