@@ -23,11 +23,13 @@
 }
 
 
-.modal #close-btn{
+.modal #close-btn,
+.modal .close__btn{
     align-self: flex-end;
 }
 
-.modal #close-btn:hover{
+.modal #close-btn:hover,
+.modal .close__btn:hover{
     color: var(--red-600);
 }
 .modal .modal-text-container{
