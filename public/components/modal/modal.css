@@ -1,0 +1,69 @@
+@import url(../../main.css);
+
+.modal-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.modal{
+    background-color:var(--white);
+    border-radius: .5rem;
+    box-shadow: var(--shadow);
+    transition: transform .3s ease-in-out;
+    
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.modal #close-btn{
+    align-self: flex-end;
+}
+
+.modal #close-btn:hover{
+    color: var(--red-600);
+}
+.modal .modal-text-container{
+    text-align: center;
+    padding: 1rem;
+}
+
+.modal .modal-btn-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.modal .btn-standard-primary{
+    font-size: 1.1rem;
+}
+.modal-btn-container .btn:hover{
+   opacity: .7;
+}
+
+/* --------demo styling--------------- */
+.modal-demo-wrapper{
+    position: relative;
+    height: 50vh;
+}
+.modal-demo{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.show-modal{
+display: flex;
+}
