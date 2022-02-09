@@ -1,0 +1,38 @@
+@import url(../../main.css );
+
+.slider__container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.slider-wrapper,
+.slider-wrapper-with-icon{
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    padding:.5rem 1rem;
+
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+}
+
+.slider-heading{
+    align-self: flex-start;
+}
+
+.slider-label{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slider-bar{
+    width: 100%;
+}
+.slider-bar-with-icon{
+width: 90%;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./slider.css" />
+
+    <title>Purple Brick | Slider</title>
+  </head>
+  <body>
+    <header class="header doc__header" id="header">
+      <nav class="pb-container container">
+        <a href="../../../index.html" class="pb-logo">Purple-Brick</a>
+        <ul class="pb-nav__items">
+          <li><a href="../../main.html">Docs.</a></li>
+          <li>
+            <a href="https://github.com/abhisekgupta001/Brick-UI"
+              ><i class="bx bxl-github pb-social"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/dev_abhi_js"
+              ><i class="bx bxl-twitter pb-social"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/abhisek-gupta-7204101b2/"
+              ><i class="bx bxl-linkedin pb-social"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="pb-hamburger-container">
+          <i class="bx bx-grid-alt pb-hamburger"></i>
+        </div>
+      </nav>
+    </header>
+    <section class="doc__hero-section" id="doc__hero-section">
+      <aside class="doc__sidebar">
+        <div class="mini__container">
+          <h3>Components</h3>
+          <ul class="doc__sidebar--items">
+            <li><a href="../../main.html">Install</a></li>
+            <li><a href="../alert/alert.html">Alert</a></li>
+            <li><a href="../avatar/avatar.html">Avatar</a></li>
+            <li><a href="../badge/badge.html">Badge</a></li>
+            <li><a href="../button/button.html">Button</a></li>
+            <li><a href="../card/card.html">Card</a></li>
+            <li><a href="../image/image.html">Image</a></li>
+            <li><a href="../input/input.html">Input</a></li>
+            <li><a href="../text_utilities/text_util.html">Typography</a></li>
+            <li>
+              <a href="../list/list.html">List</a>
+            </li>
+            <li>
+              <a href="../modal/modal.html">Modal</a>
+            </li>
+            <li class="active-nav">
+              <a href="../slider/slider.html">Slider</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main class="doc__main">
+        <section class="slider-section doc-section" id="slider-section">
+          <div class="section__heading--container">
+            <h1 class="section__title">Slider</h1>
+            <p class="section__para">
+              Sliders are used to by users to select a value from a range of
+              number.<br />
+              To use slider component use classes given below 👇.
+            </p>
+          </div>
+          <h3 class="heading-3">An Example</h3>
+          <div class="section__output slider__container">
+            <div class="slider-wrapper">
+              <p class="para-4 slider-heading">Select Budget</p>
+              <label class="slider-label">
+                <span>0</span>
+                <span>50</span>
+                <span>100</span>
+              </label>
+              <input
+                class="slider-bar"
+                type="range"
+                name="slider"
+                id="slider"
+                min="0"
+                max="100"
+                value="50"
+                step="10"
+              />
+            </div>
+            <!-- ------------------Slider with icon----------- -->
+            <div class="slider-wrapper-with-icon">
+              <p class="para-4 slider-heading">Adjust Volume</p>
+              <label class="slider-label-with-icon">
+                <i class="bx bxs-volume-full"></i>
+
+                <input
+                  class="slider-bar-with-icon"
+                  type="range"
+                  name="slider"
+                  id="slider"
+                  min="0"
+                  max="10"
+                  value="7"
+                  step="1"
+                />
+              </label>
+            </div>
+          </div>
+          <div class="section__embed">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28253%2C246%2C249%2C0%29&t=synthwave-84&wt=none&l=htmlmixed&width=728&ds=false&dsyoff=54px&dsblur=100px&wc=true&wa=true&pv=16px&ph=8px&ln=false&fl=1&fm=Hack&fs=12px&lh=116%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522slider-wrapper%2522%253E%250A%2520%2520%253Cp%2520class%253D%2522para-4%2520slider-heading%2522%253ESelect%2520Budget%253C%252Fp%253E%250A%2520%2520%253Clabel%2520class%253D%2522slider-label%2522%253E%250A%2520%2520%2509%253Cspan%253E0%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%253E50%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%253E100%253C%252Fspan%253E%250A%2520%2520%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520class%253D%2522slider-bar%2522%2520type%253D%2522range%2522%2520name%253D%2522slider%2522%2520id%253D%2522slider%2522%2520min%253D%25220%2522%2520max%253D%2522100%2522%2520value%253D%252250%2522%2520step%253D%252210%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520------------------Slider%2520with%2520icon-----------%2520--%253E%250A%253Cdiv%2520class%253D%2522slider-wrapper-with-icon%2522%253E%250A%2520%2520%253Cp%2520class%253D%2522para-4%2520slider-heading%2522%253EAdjust%2520Volume%253C%252Fp%253E%250A%2520%2520%253Clabel%2520class%253D%2522slider-label-with-icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522bx%2520bxs-volume-full%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522slider-bar-with-icon%2522%2520type%253D%2522range%2522%2520name%253D%2522slider%2522%2520id%253D%2522slider%2522%2520min%253D%25220%2522%2520max%253D%252210%2522%2520value%253D%25227%2522%2520step%253D%25221%2522%252F%253E%250A%2520%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 100%;
+                height: 342px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+      </main>
+    </section>
+    <footer id="footer" class="footer">
+      <span> Designed and Developed by </span>
+      <a href="https://abhisekgupta.netlify.app/"> Abhisek Gupta</a>
+    </footer>
+    <script src="./slider.js"></script>
+    <script src="../../main.js"></script>
+  </body>
+</html>
