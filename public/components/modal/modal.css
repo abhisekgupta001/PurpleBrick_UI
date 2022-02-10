@@ -58,6 +58,7 @@
     height: 50vh;
 }
 .modal-demo{
+    width: 100%;
     display: none;
     position: absolute;
     top: 50%;

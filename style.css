@@ -182,13 +182,15 @@
 }
 
 .footer{
-    flex-basis: 3rem;
+    flex-basis: 1rem;
     background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
+    
     gap: 10px;
-    padding:1rem 0;
+    padding:1rem;
     color:var(--secondary-color-medium);
     position:relative;
     bottom:0;
@@ -199,7 +201,7 @@
 }
 
 .footer a{
-    color:var(--primary-color-light);
+  color:var(--primary-color-light);
   border-bottom: 1px solid transparent;
   transition: all .6s ease-in;
 
