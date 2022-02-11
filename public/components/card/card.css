@@ -172,12 +172,12 @@ background-color: var(--primary-color-light);
 
 .btn-cancel, .btn-confirm{
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     font-size: 1.1rem;
     font-weight: 400;
 }
 .btn-confirm{
-    padding: .2rem 0.5rem;
+    /* padding: .2rem 0.5rem; */
     margin-left: .5rem;
 }
 .btn-cancel:hover, .btn-confirm:hover{
@@ -208,6 +208,6 @@ background-color: var(--primary-color-light);
     right: -15px;
     background-color: var(--red-600);
     color:var(--white);
-    z-index: 3;
+    z-index: 2;
     transform: rotate(30deg);
 }
