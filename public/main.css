@@ -107,13 +107,12 @@
 .doc-section
 {
     font-family: var(--poppins);
-    
     min-height: calc(100vh - 3rem);
-    padding:1rem 1rem 0;
+    padding:2rem 2rem 0;
     margin-top: 4rem;
     display: flex;
     flex-flow: column nowrap;
-    gap: 1rem;
+    gap: 2.5rem;
 }
 
 .section__heading--container .section__title{
@@ -194,18 +193,6 @@
     background: var(--secondary-color);
 }
 ::-webkit-scrollbar-thumb{
-    background: var(--primary-color);
-    border-radius: 1rem;
-    border: 2px solid var(--secondary-color);
-}
-
-iframe::-webkit-scrollbar{
-    width: 10px;
-}
-iframe::-webkit-scrollbar-track{
-    background: var(--secondary-color);
-}
-iframe::-webkit-scrollbar-thumb{
     background: var(--primary-color);
     border-radius: 1rem;
     border: 2px solid var(--secondary-color);
