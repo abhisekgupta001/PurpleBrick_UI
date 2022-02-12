@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../../images/fav_icon.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./navbar.css" />
+
+    <title>Purple Brick | Navbar</title>
+  </head>
+  <body>
+    <header class="header doc__header" id="header">
+      <nav class="pb-container container">
+        <a href="../../../index.html" class="pb-logo">Purple-Brick</a>
+        <ul class="pb-nav__items">
+          <li><a href="../../main.html">Docs.</a></li>
+          <li>
+            <a href="https://github.com/abhisekgupta001/Brick-UI"
+              ><i class="bx bxl-github pb-social"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/dev_abhi_js"
+              ><i class="bx bxl-twitter pb-social"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/abhisek-gupta-7204101b2/"
+              ><i class="bx bxl-linkedin pb-social"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="pb-hamburger-container">
+          <i class="bx bx-grid-alt pb-hamburger"></i>
+        </div>
+      </nav>
+    </header>
+    <section class="doc__hero-section" id="doc__hero-section">
+      <aside class="doc__sidebar">
+        <div class="mini__container">
+          <h3>Components</h3>
+          <ul class="doc__sidebar--items">
+            <li><a href="../../main.html">Install</a></li>
+            <li><a href="../alert/alert.html">Alert</a></li>
+            <li><a href="../avatar/avatar.html">Avatar</a></li>
+            <li><a href="../badge/badge.html">Badge</a></li>
+            <li><a href="../button/button.html">Button</a></li>
+            <li><a href="../card/card.html">Card</a></li>
+            <li><a href="../image/image.html">Image</a></li>
+            <li><a href="../input/input.html">Input</a></li>
+            <li><a href="../text_utilities/text_util.html">Typography</a></li>
+            <li>
+              <a href="../list/list.html">List</a>
+            </li>
+            <li>
+              <a href="../modal/modal.html">Modal</a>
+            </li>
+            <li><a href="../slider/slider.html">Slider</a></li>
+            <li class="active-nav">
+              <a href="../navbar/navbar.html">Navbar</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main class="doc__main">
+        <section class="navbar-section doc-section" id="navbar-section">
+          <div class="section__heading--container">
+            <h1 class="section__title">Navbar</h1>
+            <p class="section__para">
+              Navbar is the bar on top of sites used by users to navigate to
+              differnt pages, or different areas of the same page.<br />
+              To use this navbar in your project just add class
+              <strong>navbar</strong> to your div👇.
+            </p>
+          </div>
+          <h3 class="heading-3">An E-Commerce Navbar</h3>
+          <div class="section__output navbar__container">
+            <header class="navbar">
+              <nav class="nav-container-inline">
+                <div class="nav-logo-container">
+                  <a href="#" class="nav-logo">Company</a>
+                </div>
+                <div class="nav-search-container">
+                  <label for="nav-search-bar" class="nav-search-label">
+                    <input
+                      type="text"
+                      id="nav-search-bar"
+                      class="nav-search-bar"
+                      placeholder="Search..."
+                    />
+                    <i class="bx bx-search-alt-2 nav-search-icon"></i>
+                  </label>
+                </div>
+                <div class="nav-items">
+                  <a href="#">
+                    <p>Products</p>
+                  </a>
+                  <a href="#">
+                    <i class="bx bx-bookmark-heart"></i>
+                  </a>
+
+                  <a href="#">
+                    <i class="bx bx-cart"></i>
+                  </a>
+
+                  <a href="#">
+                    <!-- <i class="bx bxs-user-circle "avatar avatar-circular"></i> -->
+                    <h1 class="avatar-initials avatar-circular navbar-profile">
+                      AG
+                    </h1>
+                  </a>
+                </div>
+              </nav>
+            </header>
+          </div>
+          <div class="section__embed">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28253%2C246%2C249%2C0%29&t=synthwave-84&wt=none&l=auto&width=728&ds=false&dsyoff=54px&dsblur=100px&wc=true&wa=true&pv=16px&ph=8px&ln=false&fl=1&fm=Hack&fs=12px&lh=116%25&si=false&es=2x&wm=false&code=%253Cheader%2520class%253D%2522navbar%2522%253E%250A%2509%253Cnav%2520class%253D%2522nav-container-inline%2522%253E%250A%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522nav-logo-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-logo%2522%253EPehnawa%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-search-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522nav-search-bar%2522%2520class%253D%2522nav-search-label%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cinput%2520type%253D%2522text%2522%2520id%253D%2522nav-search-bar%2522%2520class%253D%2522nav-search-bar%2522%2520placeholder%253D%2522Search...%2522%2520%252F%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2509%2509%2509%2520%2520%2520%2520%253Ci%2520class%253D%2522bx%2520bx-search-alt-2%2520nav-search-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EProducts%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bx%2520bx-bookmark-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2509%2509%2509%253Ca%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bx%2520bx-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2509%2509%2509%253Ca%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bx%2520bxs-user-circle%2520%2522avatar%2520avatar-circular%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2509%253C%252Fnav%253E%250A%253C%252Fheader%253E"
+              style="
+                width: 100%;
+                height: 468px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+      </main>
+    </section>
+    <footer id="footer" class="footer">
+      <span> Designed and Developed by </span>
+      <a href="https://abhisekgupta.netlify.app/"> Abhisek Gupta</a>
+    </footer>
+    <script src="./navbar.js"></script>
+    <script src="../../main.js"></script>
+  </body>
+</html>
