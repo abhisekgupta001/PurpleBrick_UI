@@ -12,7 +12,7 @@
 @import url(./components/input/input.css);
 @import url(./components/text_utilities/text_util.css);
 @import url(./components/list/list.css);
-@import url(./components/navbar/navbar.html);
+@import url(./components/navbar/navbar.css);
 
 .doc__header{
     position: fixed;
