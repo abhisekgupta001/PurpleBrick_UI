@@ -211,3 +211,31 @@ background-color: var(--primary-color-light);
     z-index: 3;
     transform: rotate(30deg);
 }
+
+.gender-cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+}
+
+.gender-card{
+    display: grid;
+    grid-template-rows: 250px;
+    align-items: center;
+    justify-items: center;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+    text-transform: uppercase;
+}
+.gender-card:hover {
+    opacity: .8;
+  }
+
+.card-women{
+    background-image: linear-gradient(180deg, rgba(22, 21, 21,.9),rgba(22, 21, 21,.1)), url(../../images/women.jpg);
+}
+.card-women > h2{
+    text-align: center;
+}
