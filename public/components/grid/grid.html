@@ -56,12 +56,8 @@
             </li>
             <li><a href="../image/image.html">Image</a></li>
             <li><a href="../input/input.html">Input</a></li>
-            <li>
-              <a href="../list/list.html">List</a>
-            </li>
-            <li>
-              <a href="../modal/modal.html">Modal</a>
-            </li>
+            <li><a href="../list/list.html">List</a></li>
+            <li><a href="../modal/modal.html">Modal</a></li>
             <li><a href="../navbar/navbar.html">Navbar</a></li>
             <li><a href="../rating/rating.html">Rating</a></li>
             <li><a href="../slider/slider.html">Slider</a></li>
@@ -74,6 +70,170 @@
         <section class="grid-section doc-section" id="grid-section">
           <div class="section__heading--container">
             <h1 class="section__title">Grid</h1>
+            <p class="section__para">
+              Grid is a repsonive layout where the contents adapts as per screen
+              size they are being viewed on.<br />
+              To use a card component add class <strong>card</strong>.
+            </p>
+          </div>
+          <div class="section__usage--description">
+            <p>Two types of Grid availabe for use are:</p>
+            <ul>
+              <li>
+                Grid with 2 items
+                <span class="class-to-be-used">[grid-2]</span>
+              </li>
+              <li>
+                Grid with 3 items
+                <span class="class-to-be-used">[grid-3]</span>
+              </li>
+            </ul>
+          </div>
+          <h3>Grid with 2 items</h3>
+          <div class="section__output grid__container">
+            <div class="grid-2-container">
+              <div class="card card-product">
+                <div class="card-badge">NEW</div>
+                <img
+                  src="../../images/product-image.webp"
+                  alt=""
+                  class="card-product-img"
+                />
+                <div class="product-name">
+                  <h5 class="product-title">Roadster</h5>
+                  <p class="product-subtitle">Men Casual Shirt</p>
+                  <p class="product-price">
+                    Rs. 599 <span class="discount-price"> Rs. 1499</span
+                    ><span class="discount-percent"> (60% OFF)</span>
+                  </p>
+                </div>
+                <div class="product-clickable">
+                  <button class="btn btn-add-to-cart btn-standard-primary">
+                    Add to Cart
+                  </button>
+                  <button class="btn btn-wishlist">Wishlist</button>
+                </div>
+              </div>
+              <div class="card card-product">
+                <div class="card-badge">NEW</div>
+                <img
+                  src="../../images/product-image.webp"
+                  alt=""
+                  class="card-product-img"
+                />
+                <div class="product-name">
+                  <h5 class="product-title">Roadster</h5>
+                  <p class="product-subtitle">Men Casual Shirt</p>
+                  <p class="product-price">
+                    Rs. 599 <span class="discount-price"> Rs. 1499</span
+                    ><span class="discount-percent"> (60% OFF)</span>
+                  </p>
+                </div>
+                <div class="product-clickable">
+                  <button class="btn btn-add-to-cart btn-standard-primary">
+                    Add to Cart
+                  </button>
+                  <button class="btn btn-wishlist">Wishlist</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section__embed">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28253%2C246%2C249%2C0%29&t=synthwave-84&wt=none&l=auto&width=728&ds=false&dsyoff=54px&dsblur=100px&wc=true&wa=true&pv=16px&ph=8px&ln=false&fl=1&fm=Hack&fs=12px&lh=116%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-2-container%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card%2520card-product%2522%253E%250A%2520%2520%2520%2520...%252F%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520card-product%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520...%252F%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 100%;
+                height: 202px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <h3>Grid with 3 or more items</h3>
+          <div class="section__output grid__container">
+            <div class="grid-responsive-container">
+              <div class="card card-product">
+                <div class="card-badge">NEW</div>
+                <img
+                  src="../../images/product-image.webp"
+                  alt=""
+                  class="card-product-img"
+                />
+                <div class="product-name">
+                  <h5 class="product-title">Roadster</h5>
+                  <p class="product-subtitle">Men Casual Shirt</p>
+                  <p class="product-price">
+                    Rs. 599 <span class="discount-price"> Rs. 1499</span
+                    ><span class="discount-percent"> (60% OFF)</span>
+                  </p>
+                </div>
+                <div class="product-clickable">
+                  <button class="btn btn-add-to-cart btn-standard-primary">
+                    Add to Cart
+                  </button>
+                  <button class="btn btn-wishlist">Wishlist</button>
+                </div>
+              </div>
+              <div class="card card-product">
+                <img
+                  src="../../images/product-image.webp"
+                  alt=""
+                  class="card-product-img"
+                />
+                <div class="product-name">
+                  <h5 class="product-title">Roadster</h5>
+                  <p class="product-subtitle">Men Casual Shirt</p>
+                  <p class="product-price">
+                    Rs. 599 <span class="discount-price"> Rs. 1499</span
+                    ><span class="discount-percent"> (60% OFF)</span>
+                  </p>
+                </div>
+                <div class="product-clickable">
+                  <button class="btn btn-add-to-cart btn-standard-primary">
+                    Add to Cart
+                  </button>
+                  <button class="btn btn-wishlist">Wishlist</button>
+                </div>
+              </div>
+              <div class="card card-product">
+                <img
+                  src="../../images/product-image.webp"
+                  alt=""
+                  class="card-product-img"
+                />
+                <div class="product-name">
+                  <h5 class="product-title">Roadster</h5>
+                  <p class="product-subtitle">Men Casual Shirt</p>
+                  <p class="product-price">
+                    Rs. 599 <span class="discount-price"> Rs. 1499</span
+                    ><span class="discount-percent"> (60% OFF)</span>
+                  </p>
+                </div>
+                <div class="product-clickable">
+                  <button class="btn btn-add-to-cart btn-standard-primary">
+                    Add to Cart
+                  </button>
+                  <button class="btn btn-wishlist">Wishlist</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section__embed">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28253%2C246%2C249%2C0%29&t=synthwave-84&wt=none&l=auto&width=728&ds=false&dsyoff=54px&dsblur=100px&wc=true&wa=true&pv=16px&ph=8px&ln=false&fl=1&fm=Hack&fs=12px&lh=116%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-responsive-container%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card%2520card-product%2522%253E%250A%2520%2520%2520%2520...%252F%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520card-product%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520...%252F%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card%2520card-product%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520...%252F%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 100%;
+                height: 244px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
           </div>
         </section>
       </main>
