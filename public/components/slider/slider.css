@@ -32,7 +32,10 @@
 
 .slider-bar{
     width: 100%;
+    accent-color: var(--primary-color);
 }
 .slider-bar-with-icon{
 width: 90%;
+accent-color: var(--primary-color);
+
 }
