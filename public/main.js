@@ -10,6 +10,5 @@ hamburger.addEventListener("click", ()=>{
 docMain.addEventListener("click", ()=>{
     docSideBar.classList.add("hide-doc__sidebar");
     docSideBar.classList.remove("show-doc__sidebar");
-
 });
 
