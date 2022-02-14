@@ -1,1 +1,29 @@
 @import url(../../main.css);
+
+.rating-input{
+appearance: none; 
+width: 0;
+margin: 0;
+height: 0;
+}
+
+.rating-star{
+    color:var(--gray-400);
+}
+
+.rating-input:enabled + .rating-star{
+    cursor: pointer;
+}
+
+.rating-input:enabled + .rating-star:hover{
+    color: var(--yellow-200);
+}
+
+.rating-input:checked + .rating-star{
+    color: var(--yellow-600);
+}
+
+
+.rating-label .rating-star{
+    font-size: 1.5rem;
+}
