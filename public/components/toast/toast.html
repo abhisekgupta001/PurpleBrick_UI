@@ -72,6 +72,50 @@
         <section class="toast-section doc-section" id="toast-section">
           <div class="section__heading--container">
             <h1 class="section__title">Toast</h1>
+            <p class="section__para">
+              Toast are small popups that appears on the screen (in form of
+              notifications) for a few second and automatically vanishes. <br />
+              To use toast component use classes mentioned below 👇.
+            </p>
+          </div>
+          <h3 class="heading-3">An Example</h3>
+          <div class="section__output toast__container">
+            <div class="btn-toast-container">
+              <button class="btn btn-toast btn-standard-danger">
+                Raise a toast
+              </button>
+            </div>
+            <div class="snack">Cheers! 🥂</div>
+          </div>
+          <p class="para-3">HTML CODE SNIPPET</p>
+          <div class="section__embed">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28253%2C246%2C249%2C0%29&t=synthwave-84&wt=none&l=auto&width=728&ds=false&dsyoff=54px&dsblur=100px&wc=true&wa=true&pv=16px&ph=8px&ln=false&fl=1&fm=Hack&fs=12px&lh=116%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522section__output%2520toast__container%2522%253E%250A%2509%253Cdiv%2520class%253D%2522btn-toast-container%2522%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-toast%2520btn-standard-danger%2522%253ERaise%2520a%2520toast%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522snack%2522%253ECheers%21%2520%25F0%259F%25A5%2582%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 100%;
+                height: 175px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <p class="para-3">JS SNIPPET</p>
+          <div class="section__embed">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28253%2C246%2C249%2C0%29&t=synthwave-84&wt=none&l=auto&width=728&ds=false&dsyoff=54px&dsblur=100px&wc=true&wa=true&pv=16px&ph=8px&ln=false&fl=1&fm=Hack&fs=12px&lh=116%25&si=false&es=2x&wm=false&code=const%2520btnToast%2520%253D%2520document.querySelector%28%2522.btn-toast%2520%2522%29%253B%250Aconst%2520snackbar%2520%253D%2520document.querySelector%28%2522.snack%2522%29%253B%250A%250AbtnToast.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520showToast%28%29%29%253B%250A%250Aconst%2520showToast%2520%253D%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520snackbar.classList.add%28%2522show-snackbar%2522%29%253B%250A%2520%2520%2520%2520setTimeout%28%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520snackbar.classList.remove%28%2522show-snackbar%2522%29%253B%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%257D%252C%25203000%29%253B%250A%257D"
+              style="
+                width: 100%;
+                height: 244px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
           </div>
         </section>
       </main>
