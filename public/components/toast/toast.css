@@ -2,6 +2,7 @@
 
 .toast__container{
     align-items: center;
+    position: relative;
 }
 
 .btn-toast:hover{
@@ -14,9 +15,10 @@
     position: absolute;
     bottom: 2rem;
     right: 2rem;
-    transform: translateY(5rem);
+    transform: translateY(100%);
     opacity: 0;
     transition: all .3s ease-in-out;
+    z-index: 2;
 }
 
 .show-snackbar{
