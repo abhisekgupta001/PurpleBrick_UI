@@ -239,3 +239,182 @@ background-color: var(--primary-color-light);
 .card-women > h2{
     text-align: center;
 }
+
+/* ------------------card for ecommerce version 2.0---------- */
+
+
+.product-card{
+    width: 13rem;
+    align-items: stretch;
+    position: relative;
+    background-color: var(--white);
+}
+
+.product-card:hover{
+    box-shadow: var(--shadow);
+}
+.product-card .btn-wishlist{
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: var(--white);
+    border: none;
+    z-index: 2;
+}   
+
+.product-card .btn-wishlist:hover,
+.product-card .btn-wishlist:active{
+    color: var(--primary-color);
+}
+
+.product-card .card-img-wrapper{
+    overflow: hidden;
+    height: auto;
+}
+
+.card-img-wrapper .card-img{
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    transition: all .3s ease;
+}
+.card-img-wrapper .card-img:hover{
+    transform: scale(1.05);
+    opacity: .7;
+}
+
+.card-details-wrapper{
+    width: 90%;
+    margin: .5rem auto;
+}
+
+.card-details-wrapper > *{
+    margin-bottom: .5rem;
+}
+
+.card-name-wrapper .card-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.card-name-wrapper .card-subtitle{
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.product-card .card-btns{
+    display: grid;
+    place-items: center;
+}
+
+.card-btns .btn-add-to-cart{
+    width: 75%;
+    text-align: center;
+    padding: .5rem 1rem;
+    background-color: var(--navbar-bg-color);
+    color: var(--white);
+    border: 1px solid var(--navbar-bg-colornav);
+    border-radius: 0;
+}
+
+.card-btns .btn-add-to-cart:hover{
+    opacity: .7;
+    width: 100%;
+}
+.card-btns .btn-add-to-cart:active{
+    width: 100%;
+}
+
+/* ------------horizontal checkout card------------- */
+
+
+.product-card-hor{
+    background-color:var(--white);
+    box-shadow: var(--shadow);
+    gap: 1rem;
+    padding: .5rem;
+}
+
+.product-card-hor .card-img-wrapper{
+    width: 40%; 
+    overflow: hidden;
+     
+}
+.product-card-hor .card-img-wrapper img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.product-card-hor .card-details-wrapper{
+    flex: 1;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: .75rem;
+
+   
+}
+
+.product-card-hor .card-title{
+    font-size: 1rem;
+}
+
+.quantity-input-wrapper .quantity-input{
+    width: 3rem;
+    border: 1px solid var(--navbar-bg-color);
+    padding: .25rem .25rem;
+    color: var(--navbar-bg-color);
+    background-color: transparent;
+}
+
+.quantity-input-wrapper > label {
+    justify-content: space-around;
+    gap: .5rem;
+}
+.quantity-input-wrapper > label .bx{
+    font-size: 1rem;
+}
+.quantity-input-wrapper > label .bx:hover{
+    color: var(--gray-600);
+}
+
+
+.product-card-hor .btn,
+.btn-place-order{
+    align-self: center;
+    width: 90%; 
+    font-size: .75rem;
+    padding: .25rem .5rem;
+    border-radius: 0;
+    border: 1px solid var(--navbar-bg-color);
+}
+
+.product-card-hor .card-btns{
+    align-self: stretch;
+    gap: .5rem;
+}
+
+
+
+.product-card-hor .btn{
+    align-self: flex-end;
+    width: 100%;
+    font-size: .75rem;
+    padding: .25rem .5rem;
+    border-radius: 0;
+    border: 1px solid var(--navbar-bg-color);
+    width: 100%;
+}
+.product-card-hor .btn:hover{
+    opacity: .8;
+}
+
+.btn-remove-from-cart{
+    background-color: var(--navbar-bg-color);
+    color: var(--white);
+}
+
+.btn-move-to-wishlist{
+    color: var(--navbar-bg-color);
+    background-color: var(--white);
+}
